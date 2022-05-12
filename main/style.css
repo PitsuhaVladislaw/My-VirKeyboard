@@ -3,19 +3,66 @@
     left: 0;
     bottom: 0;
     height: 100px;
-    width: auto;
-    margin: 0 auto;
+    width: 100%;
     padding: 5px 0;
-    background-color: red;
+    background-color: rgba(121, 231, 24, 0.814);
     box-shadow: 0 0 58px black;
     user-select: none;
     transition: bottom 0.4s;
 }
 
-.keyboard--hidden {
+.keyboard-position {
     bottom: -100%;
 }
 
-.keyboard__keys {
+.keyboard_texts {
     text-align: center;
+}
+
+.keyboard_text {
+    height: 45px;
+    width: 6%;
+    color: #ffffff;
+    font-size: 1.05rem;
+    max-width: 90px;
+    background: rgba(255, 6, 6, 0.693);
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.keyboard_text:active {
+    background-color: rgba(167, 40, 40, 0.719);
+}
+
+.keyboard_text_wide {
+    width: 12%;
+}
+
+.keyboard_text_extra_wide {
+    width: 36%;
+    max-width: 500px;
+}
+
+.keyboard_text_activatable::after {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    content: '';
+}
+
+.keyboard_text_active::after {
+    background-color: #08ff00;
 }

@@ -15,9 +15,19 @@
     <div>
         <h1> My Virtual Keyboard </h1>
     </div>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
     <div class="keyboard">
-        <div class="keyboard--hidden">
-            <button type="button" class="keyboard__keys"> D </button>
+        <div class="keyboard_texts">
+            <button type="button" class="keyboard_text"> D </button>
+            <button type="button" class="keyboard_text keyboard_text_wide"> 
+                <i class="material_icon"> backspace </i>
+            </button>
+            <button type="button" class="keyboard_text keyboard_text_extra_wide"> 
+                <i class="material_icon"> space </i>
+            </button>
+            <button type="button" class="keyboard_text keyboard_text_wide keyboard_text_activatable keyboard_text_active::after">
+                <i class="marerial_icon"> capsLK </i>
+            </button>
         </div>
     </div>
     <script src="./script.js"></script>
